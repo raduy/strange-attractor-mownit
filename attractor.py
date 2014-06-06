@@ -17,12 +17,12 @@ def lorenz(x, y, z, a=10., b=2.667, c=30):
 
 
 dt = 0.01
-stepCnt = 10000
+step_cnt = 10000
 
 # Need one more for the initial values
-xs = np.empty((stepCnt + 1,))
-ys = np.empty((stepCnt + 1,))
-zs = np.empty((stepCnt + 1,))
+xs = np.empty((step_cnt + 1,))
+ys = np.empty((step_cnt + 1,))
+zs = np.empty((step_cnt + 1,))
 
 # Setting initial values
 xs[0], ys[0], zs[0] = (0., 1., 1.05)
@@ -30,7 +30,7 @@ xs[0], ys[0], zs[0] = (0., 1., 1.05)
 
 def showcase(a=10., b=2.667, c=10):
     # Stepping through "time".
-    for i in range(stepCnt):
+    for i in range(step_cnt):
         # Derivatives of the X, Y, Z state
         x_dot, y_dot, z_dot = lorenz(xs[i], ys[i], zs[i], a, b, c)
         xs[i + 1] = xs[i] + (x_dot * dt)
