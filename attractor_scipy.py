@@ -31,7 +31,7 @@ def showcase(a=10., b=2.667, c=10):
                       X[0] * X[1] - b * X[2]])
 
     # initial value
-    X0 = [10., 0.5, 1.]
+    X0 = [0., 0.5, 1.]
 
     t = np.linspace(0, 100, 10000)
 

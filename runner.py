@@ -4,7 +4,7 @@
 from Tkinter import *
 import attractor_scipy as attractor
 
-fields = 'a', 'b', 'c'
+fields = 'a (sigma)', 'b', 'c (r)'
 
 
 def fetch(entries):
